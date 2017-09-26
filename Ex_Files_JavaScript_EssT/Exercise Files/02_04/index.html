@@ -1,3 +1,10 @@
+<!--
+    date : 2017-09-26
+    Modified :2017-09-26
+    Editor : Chinatsu Kawakami
+    version : 0.0.3 Add JavaScript in an external file.
+-->
+
 <!DOCTYPE html>
 <html lang="en-US">
 
@@ -5,15 +12,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>An empty page</title>
+    <script type="text/javascript" src="main.js" defer></script>
 </head>
 
 <body>
 
 </body>
 
-<script>
-    var date = new Date();
-    document.body.innerHTML = "<h1>Today is: " + date + "</h1>";
-</script>
+ <!--<script src="main.js">
+   /*1. HTML parsing
+     2. JS download
+     3. JS execution
+
+    in the case of <script src="script.js" async><script>
+    
+     1. HTML parsing
+     2. JS download
+     3. JS execution
+     4. HTML parsing again
+    */
+
+    in this file, we use defer but we can also add async to the end of script
+</script>-->
 
 </html>
