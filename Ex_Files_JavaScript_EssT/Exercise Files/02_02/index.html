@@ -1,0 +1,31 @@
+<!--
+    date : 2017-09-26
+    Modified :2017-09-26
+    Editor : Chinatsu Kawakami
+    version : 0.0.1 initial commit
+-->
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>An empty page</title>
+    <!-- <script>
+     var date = new Date();
+     document.body.innerHTML = "<h1>Today is: " + date+"</h1>";
+    </script> It does not work because the browser don't read body of html when it read header part-->
+    <!--This is because the browser is literally rendering the page from the top down
+        So when it gets to the javascript it has yet to create the body element.The script is in the wrong position for the structure of the document. If we want this script to run, because we are looking for the body inside the document, it has to run after the body elements. (This explanation comes from lynda.com-->
+</head>
+
+<body>
+	  <script>
+     var date = new Date();
+     document.body.innerHTML = "<h1>Today is: " + date+"</h1>";
+    </script>
+</body>
+
+</html>
